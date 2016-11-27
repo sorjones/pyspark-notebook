@@ -1,4 +1,4 @@
-![docker pulls](https://img.shields.io/docker/pulls/sxren/pyspark-notebook.svg) ![docker stars](https://img.shields.io/docker/stars/sxren/pyspark-notebook.svg) [![](https://images.microbadger.com/badges/image/sxren/pyspark-notebook.svg)](https://microbadger.com/images/sxren/pyspark-notebook "sxren/pyspark-notebook image metadata")
+![docker pulls](https://img.shields.io/docker/pulls/sxren/pyspark-notebook.svg) ![docker stars](https://img.shields.io/docker/stars/sxren/pyspark-notebook.svg) [![](https://images.microbadger.com/badges/image/sxren/pyspark-notebook.svg)](https://microbadger.com/images/sxren/pyspark-notebook "sxren/pyspark-notebook image metadata") [![](https://images.microbadger.com/badges/version/sxren/pyspark-notebook:2.0.2.svg)](https://microbadger.com/images/sxren/pyspark-notebook:2.0.2)
 
 # Jupyter Notebook Python, Spark 2, Mesos Stack
 

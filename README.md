@@ -98,7 +98,7 @@ Connection to Spark Cluster on Standalone Mode requires the following set of ste
 
 ## Notebook Options
 
-The Docker container executes a [`start-notebook.sh` script](https://github.com/jupyter/docker-stacks/blob/master/base-notebook/start-notebook.sh) script by default. The `start-notebook.sh` script handles the `NB_UID` and `GRANT_SUDO` features documented in the next section, and then executes the `jupyter notebook`.
+The Docker container executes a [`start-notebook.sh` script](https://github.com/jupyter/docker-stacks/blob/master/base-notebook/start-notebook.sh) by default. The `start-notebook.sh` script handles the `NB_UID` and `GRANT_SUDO` features documented in the next section, and then executes the `jupyter notebook`.
 
 You can pass [Jupyter command line options](https://jupyter.readthedocs.io/en/latest/projects/jupyter-command.html) through the `start-notebook.sh` script when launching the container. For example, to secure the Notebook server with a password hashed using `IPython.lib.passwd()`, run the following:
 

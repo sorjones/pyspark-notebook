@@ -3,16 +3,19 @@ FROM jupyter/scipy-notebook
 
 USER root
 
-# Python libraries
-RUN conda install -y xlrd
+# Dev dependencies
+RUN apt-get -y update && \
+    apt-get -y install apt-utils && \
+    apt-get clean && \
+    rm -rf /var/lib/apt/lists/*
 
 # Spark dependencies
 # Currently, Java8 is not available from Debian Jessie.
-# So, we are installing it from Debian Jessie Backports.
+# So, we're installing it from Jessie Backports.
 ENV APACHE_SPARK_VERSION 2.0.2
 RUN echo "deb http://http.debian.net/debian jessie-backports main" > /etc/apt/sources.list.d/backports.list && \
     apt-get -y update && \
-    apt-get -y install openjdk-8-jre-headless && \
+    apt-get -t jessie-backports -y install openjdk-8-jre-headless && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 RUN cd /tmp && \

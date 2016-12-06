@@ -1,6 +1,13 @@
 # Adapted for Spark 2.0.2 from https://raw.githubusercontent.com/jupyter/docker-stacks/master/pyspark-notebook/Dockerfile
 FROM jupyter/scipy-notebook
 
+USER jovyan
+
+# Import modules from Jupyter Notebooks
+# https://github.com/ipython/ipynb
+RUN /opt/conda/bin/pip install --upgrade pip && \
+    /opt/conda/bin/pip install ipynb
+
 USER root
 
 # Dev dependencies
